@@ -1,5 +1,5 @@
 @extends('layouts.main')
 
 @section('content')
-    Content here
+    This is the Homepage, fools
 @endsection
