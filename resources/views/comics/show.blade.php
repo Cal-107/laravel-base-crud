@@ -28,6 +28,13 @@
                         Edit Comic
                     </a>
                 </button>
+
+                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+
+                    <input type="submit" class="btn btn-danger" value="Delete (BE CAREFUL)" onclick="return confirm('Are you serious?')">
+                </form>
             </div>
     </section>
 @endsection
