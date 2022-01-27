@@ -1,4 +1,4 @@
-<header class="bg-dark">
+<header class="bg-secondary px-5">
     <nav class="navbar navbar-expand-lg navbar-dark text-light>
         <div class="container-fluid">
           <a class="navbar-brand" href="{{ route('home') }}">Your Library</a>

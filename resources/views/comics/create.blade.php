@@ -45,7 +45,7 @@
                         <input type="text" class="form-control" id="type" name="type">
                     </div>
 
-                    <button type="submit" class="btn btn-dark">Add Comic</button>
+                    <button type="submit" class="btn btn-primary">Add Comic</button>
                 </form>
            </div>
        </div>
