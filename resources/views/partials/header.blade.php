@@ -1,7 +1,9 @@
-<header class="bg-secondary px-5">
-    <nav class="navbar navbar-expand-lg navbar-dark text-light>
+<header class="px-5">
+    <nav class="navbar navbar-expand-lg navbar-dark>
         <div class="container-fluid">
-          <a class="navbar-brand" href="{{ route('home') }}">Your Library</a>
+          <a class="navbar-brand" href="{{ route('home') }}">
+            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/logo.png" alt="LOGO DC">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

@@ -16,20 +16,20 @@
                 </div>
             </div>
 
-            <div>
-                <button class="btn btn-primary my-5 me-5">
+            <div class="my-5">
+                <button class="btn btn-primary me-5">
                     <a href="{{ route('comics.index') }}" class="text-decoration-none text-light">
                         Back to Comics
                     </a>
                 </button>
     
-                <button class="btn btn-primary my-5">
+                <button class="btn btn-primary me-5">
                     <a href="{{ route('comics.edit', $comic->id) }}" class="text-decoration-none text-light">
                         Edit Comic
                     </a>
                 </button>
 
-                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                <form class="d-inline" action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
 
