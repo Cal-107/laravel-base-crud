@@ -99,7 +99,16 @@ class ComicController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+
+        // 1 Get the record to update
+        $comic = Comic::find($id);
+
+        // 2 save data to DB
+        $comic->update($data); // <---- save() not required
+
+        // Redirect where you need/want
+        return redirect()->route('comics.show', $comic->id);
     }
 
     /**
